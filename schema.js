@@ -1,4 +1,5 @@
-const { gql } = require("apollo-server");
+//const { gql } = require("apollo-server");
+const { gql } = require("apollo-server-express");
 exports.typeDefs = gql`
   type Plant {
     _id: ID

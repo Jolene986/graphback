@@ -1,13 +1,17 @@
 import React from 'react';
-
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-     Home sweet home
-    </div>
-  );
-}
+import AllPlants from './components/AllPlants';
+
+
+const App = ()=> (
+<div>
+  Home sweet home
+  <AllPlants />
+</div>
+)
+
+
+
 
 export default App;

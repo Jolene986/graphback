@@ -2,8 +2,11 @@
 
 exports.resolvers = {
   Query: {
-    books: () => books,
-    getAllPlants: () => {}
+    
+    getAllPlants:  async (root,args, {Plant})=> {
+      const allPlants = await Plant.find();
+      return allPlants;
+    }
   },
   Mutation: {
     addPlant: async (
@@ -41,13 +44,3 @@ exports.resolvers = {
 
 // fake data
 
-const books = [
-  {
-    title: "Harry Potter and the Chamber of Secrets",
-    author: "J.K. Rowling"
-  },
-  {
-    title: "Jurassic Park",
-    author: "Michael Crichton"
-  }
-];
