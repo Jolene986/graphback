@@ -1,2 +1,2 @@
 # plantbook
-this is the plantbook
+React GraphQL Node Apolo
